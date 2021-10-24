@@ -44,10 +44,12 @@ public class BulletController : MonoBehaviour, IApplyDamage
         if (Screen.orientation == ScreenOrientation.LandscapeRight)
         {
             // moves the bullet to the right
+            transform.eulerAngles = new Vector3(0, 0, -90);
             transform.position += new Vector3(horizontalSpeed, 0.0f, 0.0f) * Time.deltaTime;
         }
         else if (Screen.orientation == ScreenOrientation.Portrait)
         {
+            transform.eulerAngles = new Vector3(0, 0, 0);
             transform.position += new Vector3(0.0f, verticalSpeed, 0.0f) * Time.deltaTime;
         }
             
