@@ -173,3 +173,7 @@ MonoBehaviour:
   horizontalSpeed: 2
   horizontalBoundary: 2.1
   direction: 1
+  verticalSpeed: 3
+  verticalBoundary: 4.5
+  PosXOffset: 7
+  PosYOffset: 4
